@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <h1>The Original Trilogy of Indiana Jones Movies!</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg">
+        <p>The first Indiana Jones Movie! I didn't actually see this until after I saw the last crusade.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg">
+        <p>The second Indiana Jones Movie!</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg">
+        <p>The third Indiana Jones Movie! My personal favorite!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
